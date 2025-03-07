@@ -5,7 +5,7 @@ void swap(int *a,int* b)
     int temp;
     temp=*a;
     *a=*b;
-    *b=*a;
+    *b=temp;
 }
 int main()
 {
@@ -13,6 +13,6 @@ int main()
     cout<<"Enter the two Numbers to swap"<<endl;
     cin>>num1>>num2;
     swap(&num1,&num2);
-    cout<<"The swapped numbers "<<num1<<num2<<endl;
+    cout<<"The swapped numbers "<<num1<<"\t"<<num2<<endl;
     return 0;
 }
