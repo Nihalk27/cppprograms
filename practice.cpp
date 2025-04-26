@@ -28,12 +28,15 @@ int main(){
     // to find max in array without sorting it
      int crr[] = {91,845,2347,62,564,324,223};
      int s = sizeof(crr)/4;
-     int max = crr[0];
+     int mx = crr[0];
      for(int i = 1; i< s;i++ ){
-      if ( crr[i] > max){
-        max = crr[i];
+         //we can use the built in function max as well 
+         // mx = max(mx,crr[i]
+      if ( crr[i] > mx){
+        mx = crr[i];
       }
      }
+
      cout<<"Max is is this is what is : "<<max<<endl;
   }
   return 0;
